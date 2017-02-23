@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Faxime">
+      <UniqueIdentifier>{1edf830e-2a08-423e-b952-b0b76b25e498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faxime\Engine">
+      <UniqueIdentifier>{e5eab87c-b763-47a3-a55d-c56ba44b990d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faxime\Common">
+      <UniqueIdentifier>{57d3f116-56c9-43db-959a-0234b99ffc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faxime\Engine\Drawing">
+      <UniqueIdentifier>{ccb719a3-7f40-4d9d-8217-40555255de69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faxime">
+      <UniqueIdentifier>{b69fe2e7-22fd-4f9c-9887-f0079d0229ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faxime\Engine">
+      <UniqueIdentifier>{021fea9a-fd26-42d1-b405-005759e0851a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faxime\Common">
+      <UniqueIdentifier>{fbba616f-78a1-49bd-b1ae-46a1cd71847a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Faxime\Engine\Drawing">
+      <UniqueIdentifier>{8ec961f9-e5cf-452d-84de-a55bfe749809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{7ea7fe7f-6044-445f-8ed3-7232300e7638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders\Faxime">
+      <UniqueIdentifier>{a1ec5d5c-5a4f-4e85-933a-c5d2d4d6ec06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Faxime\Common\Debug.hpp">
+      <Filter>Header Files\Faxime\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Common\Vector2.hpp">
+      <Filter>Header Files\Faxime\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Common\Vector4.hpp">
+      <Filter>Header Files\Faxime\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Color.hpp">
+      <Filter>Header Files\Faxime\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Game.hpp">
+      <Filter>Header Files\Faxime\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\GLSLProgram.hpp">
+      <Filter>Header Files\Faxime\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Sprite.hpp">
+      <Filter>Header Files\Faxime\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Drawing\UV.hpp">
+      <Filter>Header Files\Faxime\Engine\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Drawing\Vertex2.hpp">
+      <Filter>Header Files\Faxime\Engine\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTime.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Faxime\Common\Debug.cpp">
+      <Filter>Source Files\Faxime\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Common\Vector2.cpp">
+      <Filter>Source Files\Faxime\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Common\Vector4.cpp">
+      <Filter>Source Files\Faxime\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\Color.cpp">
+      <Filter>Source Files\Faxime\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\Game.cpp">
+      <Filter>Source Files\Faxime\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\GLSLProgram.cpp">
+      <Filter>Source Files\Faxime\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\Sprite.cpp">
+      <Filter>Source Files\Faxime\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\Drawing\UV.cpp">
+      <Filter>Source Files\Faxime\Engine\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Engine\Drawing\Vertex2.cpp">
+      <Filter>Source Files\Faxime\Engine\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Faxime\Color.fs">
+      <Filter>Source Files\Shaders\Faxime</Filter>
+    </None>
+    <None Include="Shaders\Faxime\Color.vs">
+      <Filter>Source Files\Shaders\Faxime</Filter>
+    </None>
+  </ItemGroup>
+</Project>
