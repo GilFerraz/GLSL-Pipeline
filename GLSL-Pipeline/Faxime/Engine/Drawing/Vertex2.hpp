@@ -17,8 +17,6 @@ namespace Faxime::Engine::Drawing
 
     public:
 
-        float puta;
-
 #pragma region Public Constructors
 
         Vertex2();

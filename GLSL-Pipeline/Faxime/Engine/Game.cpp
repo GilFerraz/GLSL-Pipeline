@@ -5,8 +5,10 @@
 #include <System/String.hpp>
 
 #include <iostream>
+#include "../Common/IO/ImageLoader.hpp"
 
 using namespace System;
+using namespace Faxime::Common::IO;
 
 namespace Faxime::Engine
 {
@@ -38,7 +40,10 @@ namespace Faxime::Engine
     void Game::Run()
     {
         Init();
+        
+        texture = ImageLoader::LoadPNG("Textures/CuteTexture.png");
         sprite.Init(-0.5F, -0.5F, 1.0F, 1.0F);
+
         GameLoop();
     }
 
@@ -127,12 +132,18 @@ namespace Faxime::Engine
 
         colorProgram.Use();
 
-        //uniforms
+        // Texture
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture.id);
+        GLint textureLocation = colorProgram.GetUniformLocation("_MainTex");
+        glUniform1i(textureLocation, 0);
+
+        // uniforms
         GLint timeLocation = colorProgram.GetUniformLocation("time");
-        //link
         glUniform1f(timeLocation, time);
 
         sprite.Draw();
+        glBindTexture(GL_TEXTURE_2D, 0);
 
         colorProgram.Unuse();
 

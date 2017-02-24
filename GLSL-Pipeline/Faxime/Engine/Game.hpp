@@ -4,6 +4,7 @@
 #include "GLSLProgram.hpp"
 
 #include <SDL/SDL.h>
+#include "Drawing/Texture.hpp"
 
 namespace Faxime::Engine
 {
@@ -23,6 +24,7 @@ namespace Faxime::Engine
         float time;
 
         Sprite sprite;
+        Texture texture;
 
 #pragma endregion 
 

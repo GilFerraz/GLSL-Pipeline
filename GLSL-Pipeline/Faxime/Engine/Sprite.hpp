@@ -32,5 +32,6 @@ namespace Faxime::Engine
 
         //const GLfloat* CreateVertices() const;
         std::array<Vertex2, 6>& CreateVertices() const;
+        //Vertex2* CreateVertices() const;
     };
 }

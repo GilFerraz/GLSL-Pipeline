@@ -158,18 +158,24 @@ glew32s.lib
   <ItemGroup>
     <ClInclude Include="DateTime.hpp" />
     <ClInclude Include="Faxime\Common\Debug.hpp" />
+    <ClInclude Include="Faxime\Common\IO\ImageLoader.hpp" />
+    <ClInclude Include="Faxime\Common\IO\IOManager.hpp" />
     <ClInclude Include="Faxime\Common\Vector2.hpp" />
     <ClInclude Include="Faxime\Common\Vector4.hpp" />
     <ClInclude Include="Faxime\Engine\Color.hpp" />
+    <ClInclude Include="Faxime\Engine\Drawing\Texture.hpp" />
     <ClInclude Include="Faxime\Engine\Drawing\UV.hpp" />
     <ClInclude Include="Faxime\Engine\Drawing\Vertex2.hpp" />
     <ClInclude Include="Faxime\Engine\Game.hpp" />
     <ClInclude Include="Faxime\Engine\GLSLProgram.hpp" />
     <ClInclude Include="Faxime\Engine\Sprite.hpp" />
+    <ClInclude Include="PicoPNG.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DateTime.cpp" />
     <ClCompile Include="Faxime\Common\Debug.cpp" />
+    <ClCompile Include="Faxime\Common\IO\ImageLoader.cpp" />
+    <ClCompile Include="Faxime\Common\IO\IOManager.cpp" />
     <ClCompile Include="Faxime\Common\Vector2.cpp" />
     <ClCompile Include="Faxime\Common\Vector4.cpp" />
     <ClCompile Include="Faxime\Engine\Color.cpp" />
@@ -179,6 +185,7 @@ glew32s.lib
     <ClCompile Include="Faxime\Engine\GLSLProgram.cpp" />
     <ClCompile Include="Faxime\Engine\Sprite.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PicoPNG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Faxime\Color.fs" />

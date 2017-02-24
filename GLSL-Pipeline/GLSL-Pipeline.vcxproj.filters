@@ -43,6 +43,12 @@
     <Filter Include="Source Files\Shaders\Faxime">
       <UniqueIdentifier>{a1ec5d5c-5a4f-4e85-933a-c5d2d4d6ec06}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Faxime\Common\IO">
+      <UniqueIdentifier>{20b77e68-5166-4826-bc4c-02240eeddf99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Faxime\Common\IO">
+      <UniqueIdentifier>{c11da4f0-ea76-43d5-9cca-59835be56bb1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Faxime\Common\Debug.hpp">
@@ -74,6 +80,18 @@
     </ClInclude>
     <ClInclude Include="DateTime.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PicoPNG.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Common\IO\IOManager.hpp">
+      <Filter>Header Files\Faxime\Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Engine\Drawing\Texture.hpp">
+      <Filter>Header Files\Faxime\Engine\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Faxime\Common\IO\ImageLoader.hpp">
+      <Filter>Header Files\Faxime\Common\IO</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +127,15 @@
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PicoPNG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Common\IO\IOManager.cpp">
+      <Filter>Source Files\Faxime\Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Faxime\Common\IO\ImageLoader.cpp">
+      <Filter>Source Files\Faxime\Common\IO</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

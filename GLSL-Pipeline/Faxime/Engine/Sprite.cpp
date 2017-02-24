@@ -4,6 +4,8 @@
 
 #include <array>
 #include <cstddef>
+#include <array>
+#include <array>
 
 namespace Faxime::Engine
 {
@@ -45,10 +47,11 @@ namespace Faxime::Engine
         }
 
         std::array<Vertex2, 6> vertices = CreateVertices();
+        //Vertex2* vertices = CreateVertices();
 
         //link data to buffer
         glBindBuffer(GL_ARRAY_BUFFER, vertexBufferObjectID);
-        glBufferData(GL_ARRAY_BUFFER, sizeof vertices, vertices._Elems, GL_STATIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices._Elems, GL_STATIC_DRAW);
 
         //desligar buffer para n alocar coisas indesejadas
         glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -57,8 +60,8 @@ namespace Faxime::Engine
     void Sprite::Draw() const
     {
         glBindBuffer(GL_ARRAY_BUFFER, vertexBufferObjectID);
-
         glEnableVertexAttribArray(0);
+
         glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex2), reinterpret_cast<void*>(offsetof(Vertex2, GetPosition())));
         glVertexAttribPointer(1, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(Vertex2), reinterpret_cast<void*>(offsetof(Vertex2, GetColor())));
         glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex2), reinterpret_cast<void*>(offsetof(Vertex2, GetUV())));
@@ -66,7 +69,6 @@ namespace Faxime::Engine
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
         glDisableVertexAttribArray(0);
-
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
 
